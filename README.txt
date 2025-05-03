@@ -2,7 +2,7 @@
 - Mobile site version not similar to website. (FIXED)
 - Color scheme differs, design not consistent. (FIXED)
 - Drop arrow jumps around with screen size changed.
-- Containter's arrow not visible.
+- Containter's arrow not visible.   3755 added more space for arrow, arrow not shown!
 - Yet to integrate subpages!
 
 010525 [Thursday]

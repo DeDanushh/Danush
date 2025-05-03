@@ -80,7 +80,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #1c1d26;
+		background: #181818;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2059,6 +2059,13 @@ input, select, textarea {
 					margin-left: 100%;
 				}
 
+				.goto-next {
+					bottom: 20px !important; /* Lower position for better visibility */
+					left: 50% !important;
+					margin-left: -1.0em !important; /* Center align */
+					width: 3em !important;
+				}
+
 				.row.gtr-0 {
 					margin-top: 0;
 					margin-left: 0em;
@@ -2717,6 +2724,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			.goto-next {
+				bottom: 30px !important; /* Raise arrow position on mobile */
+			}
+
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
@@ -2961,24 +2972,23 @@ input, select, textarea {
 		text-indent: 10em;
 		white-space: nowrap;
 		width: 10em;
-		z-index: 1;
+		z-index: 1000;
 	}
 
+		/* Replace SVG arrow with CSS-generated arrow */
 		.goto-next:before {
-			background-image: url("images/arrow.svg");
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: contain;
 			content: '';
-			display: block;
-			height: 1.5em;
-			left: 50%;
-			margin: -0.75em 0 0 -1em;
 			position: absolute;
+			left: 50%;
 			top: 50%;
-			width: 2em;
-			z-index: 1;
-
+			transform: translate(-50%, -50%);
+			width: 0;
+			height: 0;
+			border-left: 12px solid transparent;
+			border-right: 12px solid transparent;
+			border-top: 12px solid #fff; /* White arrow */
+			filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); /* Ensure visibility */
+			z-index: 1000; /* Force above all content */
 		}
 
 /* Spotlight */
@@ -2989,8 +2999,10 @@ input, select, textarea {
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		height: 100vh;
-		overflow: hidden;
+		overflow: visible !important; /* Prevent arrow clipping */
 		position: relative;
+		padding-bottom: 50px; /* Add space for arrows */
+
 	}
 
 		.spotlight:nth-last-of-type(1) {
@@ -3133,7 +3145,7 @@ input, select, textarea {
 		}
 
 		.spotlight.bottom .content {
-			border-top-width: 0.35em;
+			border-top-width: 0.1em;
 			bottom: 0;
 		}
 
@@ -3159,7 +3171,7 @@ input, select, textarea {
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
+			border-color: #181818;
 		}
 
 		.spotlight.style3 .content {
@@ -3738,6 +3750,9 @@ input, select, textarea {
 			.spotlight {
 				background-attachment: scroll;
 				height: auto;
+				overflow: visible !important; /* Prevent arrow clipping */
+				padding-bottom: 100px; /* Add space for arrows */
+
 			}
 
 				.spotlight .image.main {
@@ -3774,9 +3789,10 @@ input, select, textarea {
 							padding-left: 0;
 						}
 
-				.spotlight .goto-next {
-					display: none;
-				}
+				/*.spotlight .goto-next {
+					/*display: none;
+					
+				}*/
 
 		/* Wrapper */
 
@@ -3877,6 +3893,9 @@ input, select, textarea {
 				height: 0.8em;
 				margin: -0.4em 0 0 -0.6em;
 				width: 1.2em;
+				border-top-color: #ffffff !important; /* Make arrow white to match theme */
+				border-width: 10px !important; /* Smaller arrow on mobile */
+
 			}
 
 		/* Spotlight */
@@ -3890,7 +3909,7 @@ input, select, textarea {
 				}
 
 				.spotlight .content {
-					border-top-width: 0.2em !important;
+					border-top-width: 0.1em !important;
 					padding: 3.25em 1.5em 1.25em 1.5em !important;
 				}
 
@@ -4152,7 +4171,9 @@ input, select, textarea {
 			.spotlight .content {
 				padding: 3em 1.25em 1em 1.25em !important;
 			}
-
+			.goto-next {
+				bottom: 30px !important; /* Raise arrow position on mobile */
+			}
 		/* Wrapper */
 
 			.wrapper {
