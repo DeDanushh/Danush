@@ -1,9 +1,14 @@
+040525 [Sunday]
+- Adding Email Handler
+- Adding 1 Subpage
+
 030525 [Saturday]
 - Mobile site version not similar to website. (FIXED)
 - Color scheme differs, design not consistent. (FIXED)
-- Drop arrow jumps around with screen size changed.
-- Containter's arrow not visible.   3755 added more space for arrow, arrow not shown!
+- Drop arrow jumps around with screen size changed.(FIXED)
+- Containter's arrow not visible.(FIXED)
 - Yet to integrate subpages!
+#1c1d26 - PERSISTENT BLUE BACKGROUND 
 
 010525 [Thursday]
 Bugs Identified:
