@@ -1,3 +1,6 @@
+050525 [Monday]
+- Using Formspree instead of php file.
+
 040525 [Sunday]
 - Adding Email Handler
 - Adding 1 Subpage
