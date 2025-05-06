@@ -48,47 +48,50 @@
 									<h2>Contact Me </h2>
 								</header>								
 								<form action="https://formspree.io/f/xeoggebk" method="POST">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="name" id="name" placeholder="Name" required>
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="email" id="email" placeholder="Email Address" required>
-									</div>
-									<div class="col-12">
-										<select name="category" id="category" required>
-											<option value="">-- Category --</option>
-											<option value="Consultation">Consultation</option>
-											<option value="Hire Services">Hire Services</option>
-											<option value="Request Source Code">Request Source Code</option>
-											<option value="Others">Others</option>
-										</select>
-									</div>
-									<!-- Radio Buttons -->
-									<div class="col-4 col-12-medium">
-										<input type="radio" id="priority-low" name="priority" value="Low" checked>
-										<label for="priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-medium">
-										<input type="radio" id="priority-normal" name="priority" value="Normal">
-										<label for="priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-medium">
-										<input type="radio" id="priority-high" name="priority" value="High">
-										<label for="priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-medium">
-										<input type="checkbox" id="human" name="human" required>
-										<label for="human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Enter your message" rows="6" required></textarea>
-									</div>
-									<!-- Submit Button -->
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary"/></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
+
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="name" id="name" placeholder="Name" required>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="email" id="email" placeholder="Email Address" required>
+										</div>
+										<div class="col-12">
+											<select name="category" id="category">
+												<option value="">-- Category --</option>
+												<option value="Consultation">Consultation</option>
+												<option value="Hire Services">Hire Services</option>
+												<option value="Request Source Code">Request Source Code</option>
+												<option value="Others">Others</option>
+											</select>
+										</div>
+										<!-- Radio Buttons -->
+										<div class="col-4 col-12-medium">
+											<input type="radio" id="priority-low" name="priority" value="Low" checked>
+											<label for="priority-low">Low Priority</label>
+										</div>
+										<div class="col-4 col-12-medium">
+											<input type="radio" id="priority-normal" name="priority" value="Normal">
+											<label for="priority-normal">Normal Priority</label>
+										</div>
+										<div class="col-4 col-12-medium">
+											<input type="radio" id="priority-high" name="priority" value="High">
+											<label for="priority-high">High Priority</label>
+										</div>
+										<div class="col-6 col-12-medium">
+											<input type="checkbox" id="human" name="human">
+											<label for="human">I am a human and not a robot</label>
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6" required></textarea>
+										</div>
+										<!-- Submit Button -->
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="primary"/></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</div>
 									</div>
 								</form>
 								<script>
@@ -111,7 +114,6 @@
 									  });
 									});
 								  </script>
-
 							</section>
 
 			<br>
