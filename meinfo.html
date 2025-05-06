@@ -48,9 +48,7 @@
 									<h2>Contact Me </h2>
 								</header>								
 								<form action="https://formspree.io/f/xeoggebk" method="POST">
-									<input type="hidden" name="_next" value="https://dedanushh.github.io/Danush/thank-you.html">
-
-									<div class="row gtr-uniform gtr-50">
+									<input type="hidden" name="_next" value="https://dedanushh.github.io/Danush/thank-you.html?success=true">									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall">
 											<input type="text" name="name" id="name" placeholder="Name" required>
 										</div>
@@ -58,7 +56,7 @@
 											<input type="email" name="email" id="email" placeholder="Email Address" required>
 										</div>
 										<div class="col-12">
-											<select name="category" id="category">
+											<select name="category" id="category" required>
 												<option value="">-- Category --</option>
 												<option value="Consultation">Consultation</option>
 												<option value="Hire Services">Hire Services</option>
@@ -80,7 +78,7 @@
 											<label for="priority-high">High Priority</label>
 										</div>
 										<div class="col-6 col-12-medium">
-											<input type="checkbox" id="human" name="human">
+											<input type="checkbox" id="human" name="human" required>
 											<label for="human">I am a human and not a robot</label>
 										</div>
 										<div class="col-12">
