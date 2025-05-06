@@ -48,7 +48,6 @@
 									<h2>Contact Me </h2>
 								</header>								
 								<form action="https://formspree.io/f/xeoggebk" method="POST">
-									<input type="hidden" name="_next" value="https://dedanushh.github.io/Danush/thank-you.html?success=true">									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall">
 											<input type="text" name="name" id="name" placeholder="Name" required>
 										</div>
@@ -91,8 +90,28 @@
 												<li><input type="reset" value="Reset" /></li>
 											</ul>
 										</div>
-									</div>
 								</form>
+								<script>
+									document.getElementById('myForm').addEventListener('submit', function(e) {
+									  e.preventDefault(); // Stop default form submission
+									  
+									  fetch(this.action, {
+										method: 'POST',
+										body: new FormData(this),
+										headers: { 'Accept': 'application/json' }
+									  })
+									  .then(response => {
+										if (response.ok) {
+										  // Redirect to your thank-you page on success
+										  window.location.href = 'https://dedanushh.github.io/Danush/thank-you.html';
+										}
+									  })
+									  .catch(error => {
+										console.error('Error:', error);
+									  });
+									});
+								  </script>
+
 							</section>
 
 			<br>
