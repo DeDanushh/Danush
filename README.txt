@@ -1,7 +1,14 @@
+To-Do
+- Anti-virus Video edits
+- Telegram Bot Video edits
+- Password Manager Video edits
+- Complete subpages 1 to 3
+- devdanush.com buy domain but ensure current site development uploadable 
+
 120525 (Monday)
-- Anti-virus Subpage
-- Telegram Bot Subpage
-- Password Manager Subpage
+- Anti-virus Subpage [DONE]
+- Telegram Bot Subpage [DONE]
+- Password Manager Subpage [DONE]
 - Fix Testimonial main.css [FIXED]
 - Link Monthly Newsletter to Formspree
 
