@@ -67,6 +67,30 @@
 					visibleClass: 'navPanel-visible'
 				});
 
+//Newly added
+document.querySelectorAll('.video-container').forEach(container => {
+	container.addEventListener('click', () => {
+	  	container.classList.toggle('zoom-mode');
+		});
+  	});
+
+
+const featureTabs = document.querySelectorAll('.feature-tab');
+const featureContents = document.querySelectorAll('.feature-content');
+
+featureTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Remove active classes
+    featureTabs.forEach(t => t.classList.remove('active'));
+    featureContents.forEach(c => c.classList.remove('active'));
+    
+    // Activate selected
+    const target = tab.dataset.target;
+    tab.classList.add('active');
+    document.getElementById(target).classList.add('active');
+  });
+});
+
 	// Parallax.
 	// Disabled on IE (choppy scrolling) and mobile platforms (poor performance).
 		if (browser.name == 'ie'

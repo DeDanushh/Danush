@@ -68,6 +68,57 @@ input, select, textarea {
 	appearance: none;
 }
 
+video {
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+	transition: transform 0.5s ease;
+  }
+  
+  video:hover {
+	transform: scale(1.02);
+  }
+
+.video-loading {
+	background: linear-gradient(110deg, #1a1a1a 8%, #2a2a2a 18%, #1a1a1a 33%);
+	background-size: 200% 100%;
+	animation: 1.5s shine linear infinite;
+  }
+
+  @keyframes shine {
+	to { background-position-x: -200%; }
+  }
+
+
+.feature-card {
+	background: rgba(255,255,255,0.05);
+	padding: 1.5rem;
+	border-radius: 10px;
+	margin-bottom: 2.5rem;
+  }
+  
+  .tech-item {
+	background: rgb(0, 0, 0);
+	color: #ffffff;
+	padding: 0.3rem 0.8rem;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	font-weight: 500;
+	border: 2px solid rgb(255, 255, 255);
+	display: inline-flex;
+	margin: -0.10rem 0.2rem;
+	align-items: auto;
+	transition: all 0.4s ease;
+  }
+  
+  .tech-item:hover {
+	border-color: #ffffff;
+	transform: translateY(-2px);
+	box-shadow: 0 15px 15px rgb(0, 0, 0);
+  }
+    
+  .tech-item:hover::before {
+	opacity: 1;
+  }
 
 /* Basic */
 
@@ -3255,6 +3306,7 @@ input, select, textarea {
 
 	.wrapper {
 		padding: 6em 0 4em 0;
+		background-color: #0c0c0c;
 	}
 
 
@@ -3487,6 +3539,7 @@ input, select, textarea {
 
 	#page-wrapper {
 		padding-top: 3.5em;
+		
 	}
 
 	#header {
@@ -3862,6 +3915,11 @@ input, select, textarea {
 			}
 
 	}
+
+
+
+
+
 
 /* Small */
 
