@@ -1,6 +1,15 @@
-150525 (Thursday) -> 160525 (Friday) 0300
-- Completed Subpage [1 done]
+160525 (Friday) 1500
+- Video Edit Telegram Bot [Done]
+- 2nd Subpage [Done]
 
+
+150525 (Thursday) -> 160525 (Friday) 0400
+- 1st Subpage [Done]
+- 3rd Subpage [Done] 
+- Video Edit Anti-virus [Done]
+- Video Edit Password Manager [Done]
+- Fixed Bugs on TeleBot, to complete Subpage by Evening 1700.
+- Buy domain, devdanush.com & upload github
 
 To-Do
 - Anti-virus Video edits
