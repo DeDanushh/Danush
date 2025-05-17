@@ -1757,6 +1757,20 @@ video {
 							padding-top: 5em;
 						}
 
+			.tech-item {
+				background: rgb(0, 0, 0);
+				color: #ffffff;
+				padding: 0.3rem 0.8rem;
+				border-radius: 20px;
+				font-size: 0.9rem;
+				font-weight: 500;
+				border: 2px solid rgb(255, 255, 255);
+				display: inline-flex;
+				margin: 0.3rem 0rem;
+				align-items: auto;
+				transition: all 0.4s ease;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3942,6 +3956,15 @@ video {
 	}
 
 	@media screen and (max-width: 736px) {
+
+		@media screen and (max-width: 736px) {
+			.feature-card img {
+			  max-width: 100% !important;
+			  height: auto !important;
+			  margin: 0 auto;
+			  display: block;
+			}
+		  }
 
 		/* Basic */
 			blockquote {
