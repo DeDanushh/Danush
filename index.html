@@ -358,11 +358,17 @@
 							<h2>Monthly Newsletter</h2>
 							<p>Newer Project Updates</p>
 						</header>
-						<form method="post" action="#" class="cta">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Notify Me" class="fit primary" /></div>
+						<form method="POST" action="https://formspree.io/f/myzwoqjq" class="cta">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-8 col-12-xsmall">
+							<input type="email" name="email" id="email" placeholder="Your Email Address" required />
 							</div>
+							<div class="col-4 col-12-xsmall">
+							<input type="submit" value="Notify Me" class="fit primary" />
+							</div>
+						</div>
+						<!-- "Trying" to Add redirect after submission -->
+						<input type="hidden" name="_next" value="https://devdanush.com/thank-you.html">
 						</form>
 					</div>
 				</section>
@@ -370,8 +376,6 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>-->
 						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
