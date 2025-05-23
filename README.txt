@@ -1,14 +1,7 @@
-170525 (Saturday) 0500
-- Mobile view bugs [Done]
-- Pending upload changes to devdanush.com
-- Pending Link to social media 
-- Pending Link to monthly newsletter
-
-
-160525 (Friday) 1500
+160525 (Friday) 1600
 - Video Edit Telegram Bot [Done]
 - 2nd Subpage [Done]
-
+- Uploaded to devdanush.com [Done]
 
 150525 (Thursday) -> 160525 (Friday) 0400
 - 1st Subpage [Done]
